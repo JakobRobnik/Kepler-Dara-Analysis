@@ -8,8 +8,7 @@ plt.rc('text', usetex=True)
 
 from constants import *
 import fitting_planets_functions as func
-from noise_analysis import noise
-import transit_search as ts
+import noise
 from matplotlib.patches import Ellipse
 
 def make_sound(num_times = 3):
@@ -224,13 +223,8 @@ if __name__ == '__main__':
 
     print(np.load('out_of_phases_semi_kill.npy'))
 
-    # flux, params = func.iterate_hyperprior(Time, Flux, Variance, np.ndarray.tolist(np.load('params_planets_semi_kill.npy')), Kepler90_planets_radius, 'out of phase')
-    # np.save('extracted_planets', flux)
-
-    #Flux = np.load('flux_star.npy')
-    #func.prepare_flux_for_emcee(Time, Variance)
-    #func.samples_from_posterior(Time, Variance)
-    #func.marginalize_with_integral(Time, Variance)
+    flux, params = func.iterate_hyperprior(Time, Flux, Variance, np.ndarray.tolist(np.load('params_planets_semi_kill.npy')), Kepler90_planets_radius, 'out of phase')
+    np.save('extracted_planets', flux)
 
     #func.radius_impact()
     #func.errors_planet_parameters(Time, Variance)
