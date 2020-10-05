@@ -6,7 +6,7 @@ from scipy.special import gammainc as incomplete_gamma
 
 from constants import *
 if not remote:
-    from joint_fit_and_preprocessing import kepler_io
+    import kepler_io
 
 
 cut = 3 #for normalisation
@@ -57,12 +57,15 @@ def normalization_kepler(KEPLER_ID):
     Time = np.concatenate(all_time)
     #Time -= 131.512439459 #for Kepler90 short cadence to make it compatible with long cadence
 
-    Flux = np.concatenate(all_flux)#np.concatenate([all_flux[i] - all_spline[i] for i in range(len(all_flux))])
+    Flux = np.concatenate(all_flux)
+    flux_without_spline = np.concatenate([all_flux[i] - all_spline[i] for i in range(len(all_flux))])
 
     Time, Flux = discard_planet(Time, Flux, T, phase, time_half_transit)
 
-    average, sigma = normalization(Flux)
+    #average, sigma = normalization(Flux)
+    average, sigma = normalization(flux_without_spline)
 
+    
     Flux = (Flux - average) / sigma
 
     #plot distribution of flux and flux as a function of time to check by eye that everything is ok.
@@ -186,6 +189,7 @@ def zeros(time, Flux, export_path):
 
 
 def logg_feh_Teff_lattice(logg0, feh0, Teff0):
+    """for predicting limb darkening parameters, not used in this article"""
     # logg
     logg = round(logg0)
     if logg > 5:
