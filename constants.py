@@ -2,7 +2,7 @@
 
 ####our analysis parameters###
 remote = False
-home = "C:\\Users\\USER\\Documents\\Physics\\machine\\" #basic directory, change this if you are working on another computer
+home = "C:/Users/USER/Documents/Kepler-Data-Analysis/" #basic directory, change this if you are working on another computer
 if remote:
     home = 'C:\\Users\\jakob\\Documents\\machine\\'
 long_cadence = True #if you change this to false check functions in fitting_planets_functions.py: profile_with_spline, gradient_and_profile_with_spline (and perhaps other gradients) to check if everything with T[0] is right, especially inside the inner loops
