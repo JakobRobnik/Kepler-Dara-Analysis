@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set(style="ticks", palette="muted")
 
-from noise_analysis import  noise
-from celerite_comparisson import celerite_modeling
+import noise
+#from celerite_comparisson import celerite_modeling
 import fitting_planets_functions as func
 from constants import *
 
