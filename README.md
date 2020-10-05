@@ -11,6 +11,6 @@ noise.py containts non-Gaussian outlier distribution and determination of it's p
 
 Then there is a collection of files that can be used for downloading Kepler light curves. As an example I uploaded light curve for Kepler 90 (zeros_....txt), extracted planet parameters, power spectrum and stellar parameters (...semi_kill.npy) and a residual flux search_flux.npy .
 
-If you have troubles with dependancies or functions not working properly please contact me at jakob.robnik@student.ethz.ch .
+If you have troubles with dependancies or functions not working properly please contact me at jrobnik@student.ethz.ch .
 
 A new repository containing Gaussianized matched filtering for planet detections, look elsewhere effect in the planet search and more will follow.
