@@ -14,11 +14,11 @@ from scipy import interpolate
 import seaborn as sns
 sns.set(style="ticks", palette="muted")
 import pickle
-from pynverse import inversefunc
+#from pynverse import inversefunc
 
 from constants import *
 if not remote:
-    from joint_fit_and_preprocessing import prepare_data
+    import prepare_data
 
 #spline for gradient of noise PDF
 loaded_derivative = np.load(home+'noise_analysis/derivative_noncentralT_including_star.npy')
