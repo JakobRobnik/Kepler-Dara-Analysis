@@ -11,10 +11,9 @@ from datetime import datetime
 
 #my imports
 from constants import *
-from noise_analysis import noise
-from matched_filter import transit_search as ts
-from joint_fit_and_preprocessing import prepare_data
-import emcee
+import noise
+import prepare_data
+#import emcee
 
 
 if not long_cadence:
