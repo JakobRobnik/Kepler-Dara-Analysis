@@ -1,4 +1,4 @@
-# Kepler-Dara-Analysis
+# Kepler-Data-Analysis
 Unified analysis of outliers, stellar variability and planet transits using Fouirer Gaussian process
 
 A collection of python scripts accompaining an article on Fourier GP https://iopscience.iop.org/article/10.3847/1538-3881/ab8460 (https://arxiv.org/abs/1910.01167) is presented.
