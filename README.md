@@ -1,16 +1,16 @@
 # Kepler-Data-Analysis
-Unified analysis of outliers, stellar variability and planet transits using Fouirer Gaussian process
+Unified analysis of outliers, stellar variability and planet transits using a Fouirer Gaussian process.
 
-A collection of python scripts accompaining an article on Fourier GP https://iopscience.iop.org/article/10.3847/1538-3881/ab8460 (https://arxiv.org/abs/1910.01167) is presented.
+A collection of python scripts accompaining articles:
+1. Kepler data analysis: non-Gaussian noise and Fourier Gaussian process analysis of stellar variability (https://iopscience.iop.org/article/10.3847/1538-3881/ab8460  or arxhiv version: https://arxiv.org/abs/1910.01167) 
+2. Kepler-90: Giant transit-timing variations reveal a super-puff (arxhiv: https://arxiv.org/abs/2011.08515)
 
-Main file of this repository is fitting_planets_functions.py which is meant to be called from the fitting_planet.py .
+Main file of this repository is fitting_planets_functions.py which is meant to be called from the file fitting_planet.py .
 
 prepare_data.py is for importing Kepler light curves and prepare them for the analysis. 
 
 noise.py containts non-Gaussian outlier distribution and determination of it's parameters.
 
-Then there is a collection of files that can be used for downloading Kepler light curves. As an example I uploaded light curve for Kepler 90 (zeros_....txt), extracted planet parameters, power spectrum and stellar parameters (...semi_kill.npy) and a residual flux search_flux.npy .
-
-If you have troubles with dependancies or functions not working properly please contact me at jrobnik@student.ethz.ch .
+If you have any issues please contact me at jrobnik@student.ethz.ch .
 
 A new repository containing Gaussianized matched filtering for planet detections, look elsewhere effect in the planet search and more will follow.
