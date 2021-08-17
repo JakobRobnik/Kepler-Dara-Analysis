@@ -11,6 +11,6 @@ prepare_data.py is for importing Kepler light curves and prepare them for the an
 
 noise.py containts non-Gaussian outlier distribution and determination of it's parameters.
 
-If you have any issues please contact me at jrobnik@student.ethz.ch .
+If you have any issues please contact me at jakob_robnik@berkeley.edu .
 
 A new repository containing Gaussianized matched filtering for planet detections, look elsewhere effect in the planet search and more will follow.
