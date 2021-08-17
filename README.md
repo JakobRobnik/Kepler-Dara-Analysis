@@ -3,7 +3,7 @@ Unified analysis of outliers, stellar variability and planet transits using a Fo
 
 A collection of python scripts accompaining articles:
 1. Kepler data analysis: non-Gaussian noise and Fourier Gaussian process analysis of stellar variability (https://iopscience.iop.org/article/10.3847/1538-3881/ab8460  or arxhiv version: https://arxiv.org/abs/1910.01167) 
-2. Kepler-90: Giant transit-timing variations reveal a super-puff (arxhiv: https://arxiv.org/abs/2011.08515)
+2. Kepler-90: Giant transit-timing variations reveal a super-puff (https://iopscience.iop.org/article/10.3847/1538-3881/abe6a7 or arxhiv version: https://arxiv.org/abs/2011.08515)
 
 Main file of this repository is fitting_planets_functions.py which is meant to be called from the file fitting_planet.py .
 
